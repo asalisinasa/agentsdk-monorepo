@@ -23,6 +23,22 @@ importers:
 
   apps/example-nextjs: {}
 
+  packages/adapter-supermemory:
+    dependencies:
+      '@agentsdk/core':
+        specifier: workspace:*
+        version: link:../core
+      supermemory:
+        specifier: ^3.0.0
+        version: 3.14.0
+    devDependencies:
+      typescript:
+        specifier: ^5.4.0
+        version: 5.9.3
+      vitest:
+        specifier: ^1.6.0
+        version: 1.6.1
+
   packages/adapter-vercel-ai:
     dependencies:
       '@agentsdk/core':
@@ -715,6 +731,9 @@ packages:
   strip-literal@2.1.1:
     resolution: {integrity: sha512-631UJ6O00eNGfMiWG78ck80dfBab8X6IVFB51jZK5Icd7XAs60Z5y7QdSd/wGIklnWvRbUNloVzhOKKmutxQ6Q==}
 
+  supermemory@3.14.0:
+    resolution: {integrity: sha512-gy1C6B4wUHEIOjmvDqW6GRttEdr0TZFFZ2YVU5eTCXELPQ0zjxgwudmg2kLPI6dEIITUxw1Q6n1c+vm4ro0KSg==}
+
   swr@2.4.1:
     resolution: {integrity: sha512-2CC6CiKQtEwaEeNiqWTAw9PGykW8SR5zZX8MZk6TeAvEAnVS7Visz8WzphqgtQ8v2xz/4Q5K+j+SeMaKXeeQIA==}
     peerDependencies:
@@ -1369,6 +1388,8 @@ snapshots:
   strip-literal@2.1.1:
     dependencies:
       js-tokens: 9.0.1
+
+  supermemory@3.14.0: {}
 
   swr@2.4.1(react@19.2.4):
     dependencies:

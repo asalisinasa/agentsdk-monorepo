@@ -1,0 +1,36 @@
+{
+  "name": "@agentsdk/adapter-supermemory",
+  "version": "0.1.0",
+  "description": "Supermemory adapter for @agentsdk/core — persistent memory and RAG for agents",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@agentsdk/core": "workspace:*",
+    "supermemory": "^3.0.0"
+  },
+  "devDependencies": {
+    "@agentsdk/core": "workspace:*",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
