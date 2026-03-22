@@ -12,6 +12,7 @@
     "@agentsdk/adapter-vercel-ai": "workspace:*",
     "@agentsdk/core": "workspace:*",
     "@agentsdk/next": "workspace:*",
+    "@agentsdk/react": "workspace:*",
     "@ai-sdk/anthropic": "^1.0.0",
     "@ai-sdk/google": "^1.0.0",
     "@ai-sdk/openai": "^1.0.0",
